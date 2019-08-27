@@ -1,0 +1,10 @@
+<div class='headerMain'>
+    <ul>
+        <li routerLink='/'>Home</li>
+        <li routerLink='/signin' *ngIf='isAuth == "false"'>Sign in</li>
+        <li routerLink='/signup' *ngIf='isAuth == "false"'>Sign Up</li>
+        <li routerLink='/userhome' *ngIf='isAuth == "user"'>User Dashboard</li>
+        <li routerLink='/adminhome' *ngIf='isAuth == "admin"'>Admin Dashboard</li>
+    </ul>
+    <button class='btn btn-primary' (click)='logmeout()' *ngIf='isAuth != "false"'>Logout</button>
+</div>

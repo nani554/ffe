@@ -1,0 +1,23 @@
+.headerMain {
+    padding: 20px;
+    ul {
+        display: inline-block;
+        padding:  0;
+        li {
+            display: inline-block;
+            padding: 10px;
+            color: #128adc;
+            border: 1px solid;
+            cursor: pointer;
+            margin-right: 2px;
+        }
+
+        li:hover {
+            color: #fff;
+            background: #128adc;
+        }
+    }
+    button {
+        float: right;
+    }
+}

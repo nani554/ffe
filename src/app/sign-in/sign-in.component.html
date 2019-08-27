@@ -1,0 +1,19 @@
+<div class='mainDiv'>
+    <h1>Sign In</h1>
+    <p class='text-danger' *ngIf='siginStatus == "false"'>Invalid Credentials</p>
+    <p class='text-danger' *ngIf='siginStatus == "deactivated"'>User Deactivated By Admin</p>
+    <form action="" [formGroup]='signinform' (ngSubmit)='signmein()'>
+        <div class="form-group">
+            <label for="" class="col-md-4">Username</label>
+            <input type="text" class="col-md-8" placeholder="Username" formControlName='username'>
+        </div>
+        <div class="form-group">
+            <label for="" class="col-md-4">Password</label>
+            <input type="text" class="col-md-8" placeholder="Password" formControlName='password'>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-success">Submit</button>
+            <a>Reset/Forgot</a>
+        </div>
+    </form>
+</div>
